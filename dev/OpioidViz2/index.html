@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html>
+<head>
+  <!--D3-->
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  <!--Scaling Colors-->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <!--TopoJSON-->
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <!--Tooltip?-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <!--Legend-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+  <style>
+    path {
+				stroke: #000000;
+				}
+
+    .d3-tip {
+      position: absolute;
+      padding: 7px;
+      font-size: 0.9em;
+      pointer-events: none;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+
+      -moz-box-shadow:    3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+      box-shadow:         3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .d3-tip p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .d3-tip table {
+      margin: 0;
+      padding: 0;
+      border-collapse: collapse;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Washington State Opioid-Incident Age-Adjusted Fatality Rate</h1>
+  <h2 class="year"></h2>
+  <div class="slider"></div>
+  <svg class="map"></svg>
+  <svg class="legend" width="9600" height="150"></svg>
+  <h5>Source: Washington State Department of Health</h5>
+  <script type="text/javascript" src="map.js"></script>
+</body>
+</html>
